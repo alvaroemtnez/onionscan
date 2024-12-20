@@ -40,16 +40,10 @@ provided by the core go standard library:
 * github.com/rwcarlsen/goexif - For EXIF data extraction.
 * github.com/HouzuoGuo/tiedot/db - For crawl database.
 
-See <a href="https://github.com/alvaroemtnez/onionscan/wiki">the wiki</a> for guidance.
-
-### Grab with go get
-
-`go get github.com/alvaroemtnez/onionscan`
-
 ### Compile/Run from git cloned source
 
 Once you have cloned the repository into somewhere that go can find it you can
-run `go install github.com/alvaroemtnez/onionscan` and then run the binary in `$GOPATH/bin/onionscan`.
+run `go install github.com/alvaroemtnez/onionscan@latest` and then run the binary in `$GOPATH/bin/onionscan`.
 
 Alternatively, you can just do `go run github.com/alvaroemtnez/onionscan.go` to run without compiling.
 
@@ -70,9 +64,9 @@ application:
 `onionscan --jsonReport notarealhiddenservice.onion`
 
 If you would like to use a proxy server listening on something other that 
-`127.0.0.1:9050`, then you can use the --torProxyAddress flag:
+`127.0.0.1:9150`, then you can use the --torProxyAddress flag:
 
-`onionscan --torProxyAddress=127.0.0.1:9150 notarealhiddenservice.onion`
+`onionscan --torProxyAddress=127.0.0.1:9050 notarealhiddenservice.onion`
 
 More detailed documentation on usage can be found in [doc](doc/README.md).
 
